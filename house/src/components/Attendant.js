@@ -1,6 +1,6 @@
 import React from "react";
 
-function Attendant({ id, username, salary, job, image, favorite,updateAttendants, handleDelete }) {
+function Attendant({ id, username, salary, job, image, handleDelete }) {
  
 
   function addToDeleted() {
