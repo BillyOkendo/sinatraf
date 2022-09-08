@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function NewEmployeeForm({ updateEmployees }) {
+function AddingAttendant({ updateAttendants }) {
   const [newData, setNewData] = useState({
     username: "",
     image: "",
@@ -17,7 +17,7 @@ function NewEmployeeForm({ updateEmployees }) {
     ) {
       alert("Please input all fields");
     } else {
-      fetch("http://localhost:9292/employees", {
+      fetch("http://localhost:9292/attendants", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
