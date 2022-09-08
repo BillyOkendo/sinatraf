@@ -43,7 +43,7 @@ function AttendantsHolder({ attendants, setAttendants }) {
   return (
     <div className="products-container">
       <select className="select-bar" onChange={handleSelect} value={selectedOption}>
-        <option value="All">Attendants</option>
+        <option>Attendants</option>
       </select>
 
       {showAttendants}
