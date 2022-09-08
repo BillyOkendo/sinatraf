@@ -7,7 +7,7 @@ function Home() {
         <p>WELCOME</p>
       </marquee>
       <marquee direction="UP">
-        <p>HOUSE MANAGEMENT</p>
+        <p>TO HOUSE MANAGEMENT</p>
       </marquee>
     </div>
   )

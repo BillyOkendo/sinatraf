@@ -95,10 +95,14 @@ img{
   margin-bottom: 5%;
   
 }
-
+p{
+  align-self: center;
+  font-size: 500%;
+}
 
 
 .home{
+  
 max-height: 500px;
 }
 
