@@ -20,6 +20,21 @@ a {
   margin-right: 5%;
 }
 
+form.adding-attendant-form {
+  border: solid black 1px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+form.adding-attendant-form > input,
+form.adding-attendant-form > textarea {
+  font-size: 1em;
+  font-family: sans-serif;
+  margin-bottom: 0.5em;
+}
+
+
 .select-bar {
   background-color: green;
   height: 35px;
@@ -93,13 +108,13 @@ max-height: 500px;
 
 
 
-.productss-container > div {
+.attendants-holder > div {
   border-bottom: solid 1px grey;
   padding-bottom: 1em;
   min-width: 20em;
 }
 
-.products-container > div > button {
+.attendants-holder > div > button {
   min-width: 4em;
 }
 

@@ -38,7 +38,7 @@ function AddingAttendant({ updateAttendants }) {
 
   return (
     <div className="sidebar">
-    <form className="new-employee-form" onSubmit={onSubmission}>
+    <form className="adding-attendant-form" onSubmit={onSubmission}>
       <input
         value={newData.username}
         name="username"
