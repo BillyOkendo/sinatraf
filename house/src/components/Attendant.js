@@ -22,6 +22,7 @@ function Attendant({ id, username, salary, job, image, favorite,updateProducts }
     <div id={id}>
       <h3>{username}</h3>
       <img src={image} alt="attendant" />
+      <h3>{job}</h3>
       <p>
         <strong>Salary Ksh {salary}</strong>
       </p>
