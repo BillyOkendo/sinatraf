@@ -31,9 +31,9 @@ function AttendantsHolder({ attendants, setAttendants }) {
       <Attendant
         key={attendant.id}
         id={attendant.id}
-        name={attendant.username}
-        content={attendant.job}
-        price={attendant.salary}
+        username={attendant.username}
+        job={attendant.job}
+        slary={attendant.salary}
         image={attendant.image}
         updateAttendants={updateAttendants}
       />

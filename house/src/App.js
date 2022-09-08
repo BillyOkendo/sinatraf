@@ -15,7 +15,7 @@ function App() {
 
     
   useEffect(() => {
-    fetch("https://damp-journey-46873.herokuapp.com/products")
+    fetch("http://localhost:9292/attendants")
       .then((response) => response.json())
       .then((attendants) => setAttendants(attendants));
   }, []);
