@@ -65,6 +65,16 @@ img{
   
 }
 
+.sidebar {
+  margin-top: 5%;
+  min-width: 12em;
+  width: 100%;
+  border-right: solid black 1px;
+  background:aquamarine;
+  padding: 1em;
+}
+
+
 
 
 
