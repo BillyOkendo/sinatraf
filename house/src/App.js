@@ -21,14 +21,17 @@ function App() {
   }, []);
 
 
-  
+  function upDateAttendants(attendant) {
+    setAttendants([...attendants, attendant]);
+  }
+
   return (
     <div className="app">
          <Navbar />
       <Routes>
         <Route path="/" element={<Home  />} />
          <Route path="/working" element={<Working updateAttendants={updateAttendants} setAttendants={setAttendants} attendants={attendants}/>} />
-         <Route path="/new" element={<AddingAttendant setAttendants={setAttendants} attendants={attendants} />} />
+         <Route path="/new" element={<AddingAttendant setAttendants={setAttendants} attendants={attendants} updateAttendants={upDateAttendants}/>} />
       </Routes>
       
      

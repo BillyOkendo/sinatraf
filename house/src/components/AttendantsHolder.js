@@ -1,4 +1,3 @@
-// import attendant from "./Attendant";
 import { useState } from "react";
 import Attendant from "./Attendant";
 

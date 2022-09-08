@@ -4,7 +4,7 @@ function AddingAttendant({ updateAttendants }) {
   const [newData, setNewData] = useState({
     username: "",
     image: "",
-    job: "",
+    job: ""
   });
 
   function onSubmission(e) {
@@ -26,7 +26,7 @@ function AddingAttendant({ updateAttendants }) {
       })
         .then((response) => response.json())
         .then((data) => {
-          updateEmployees(data);
+          updateAttendants(data);
           setNewData({ ...newData, username: "", job: "", image: "",salary:"" });
         });
     }
@@ -70,4 +70,4 @@ function AddingAttendant({ updateAttendants }) {
   );
 }
 
-export default NewEmployeeForm;
+export default AddingAttendant;
