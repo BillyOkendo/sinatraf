@@ -95,10 +95,7 @@ img{
   margin-bottom: 5%;
   
 }
-p{
-margin-left: 30%;
-  font-size: 500%;
-}
+
 
 
 .home{
@@ -119,7 +116,7 @@ max-height: 500px;
   min-width: 4em;
 }
 
-h1,h2{
+h1,h4{
   font-size: 500%;
 }
 

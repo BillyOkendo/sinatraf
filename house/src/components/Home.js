@@ -5,10 +5,10 @@ function Home() {
     <div className='home'>
       <h1>HOUSE MANAGEMENT</h1>
       <marquee direction="DOWN">
-        <p>WELCOME</p>
+        <h4>WELCOME</h4>
       </marquee>
       <marquee direction="UP">
-        <p>TO HOUSE MANAGEMENT</p>
+        <h4>TO HOUSE MANAGEMENT</h4>
       </marquee>
     </div>
   )
