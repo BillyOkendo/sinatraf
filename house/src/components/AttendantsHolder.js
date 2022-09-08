@@ -32,7 +32,7 @@ function AttendantsHolder({ attendants, setAttendants }) {
     if (selectedOption === "All") {
       return attendant;
     }
-    
+    return attendant.delete === true && selectedOption === "delete";
   });
 
   

@@ -1,13 +1,13 @@
 import React from "react";
 
-function Attendant({ id, username, salary, job, image, favorite,updateAttendants }) {
+function Attendant({ id, username, salary, job, image, favorite,updateAttendants, handleDelete }) {
  
 
   function addToDeleted() {
     fetch(`http://localhost:9292/attendants/${id}`, {
       method: "DELETE"    })
       .then((response) => response.json())
-      .then((data) => updateAttendants(id))
+      .then((data) => handleDelete(id))
 
       .catch((error) => console.log(error));
   }
