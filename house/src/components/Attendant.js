@@ -1,6 +1,6 @@
 import React from "react";
 
-function Attendant({ id, name, price, image, favorite,updateProducts }) {
+function Attendant({ id, username, salary, job, image, favorite,updateProducts }) {
  
 
   function addToCart() {
@@ -20,10 +20,10 @@ function Attendant({ id, name, price, image, favorite,updateProducts }) {
 
   return (
     <div id={id}>
-      <h3>{name}</h3>
-      <img src={image} alt="product" />
+      <h3>{username}</h3>
+      <img src={image} alt="attendant" />
       <p>
-        <strong> {price}</strong>
+        <strong>Salary Ksh {salary}</strong>
       </p>
 
       <button onClick={addToCart}>
