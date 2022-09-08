@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from './components/Home';
 import Working from './components/Working';
 import { useState,useEffect } from "react";
-// import Reviews from "./components/Reviews";
+import AddingAttendant from "./components/AddingAttendant";
 
 function App() {
   const [attendants, setAttendants] = useState([]);
