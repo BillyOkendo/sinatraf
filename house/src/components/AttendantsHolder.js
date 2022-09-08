@@ -33,7 +33,7 @@ function AttendantsHolder({ attendants, setAttendants }) {
         id={attendant.id}
         username={attendant.username}
         job={attendant.job}
-        slary={attendant.salary}
+        salary={attendant.salary}
         image={attendant.image}
         updateAttendants={updateAttendants}
       />
