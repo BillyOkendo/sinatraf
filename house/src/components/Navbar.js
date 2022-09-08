@@ -13,8 +13,8 @@ const Navbar = () => {
         <button className="btn">Attendants</button>
       </NavLink>
 
-      <NavLink to="/reviews">
-        <button className="btn">Reviews</button>
+      <NavLink to="/new">
+        <button className="btn">Add New Attendants</button>
       </NavLink>
     </div>
   );
