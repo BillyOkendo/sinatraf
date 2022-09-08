@@ -19,12 +19,23 @@ function AttendantsHolder({ attendants, setAttendants }) {
     setAttendants(updatedAttendants);
   }
 
+  function handleDelete(id) {
+
+    const deleted =  attendants.filter((attendant) =>{
+          return attendant.id !== id
+      })
+      setAttendants(deleted)
+    }
+  
+
   const filteredAttendants = attendants.filter((attendant) => {
     if (selectedOption === "All") {
       return attendant;
     }
     
   });
+
+  
 
   const showAttendants = filteredAttendants.map((attendant) => {
     return (
@@ -36,6 +47,7 @@ function AttendantsHolder({ attendants, setAttendants }) {
         salary={attendant.salary}
         image={attendant.image}
         updateAttendants={updateAttendants}
+        handleDelete={handleDelete}
       />
     );
   });

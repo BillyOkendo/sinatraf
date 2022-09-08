@@ -1,19 +1,13 @@
 import React from "react";
 
-function Attendant({ id, username, salary, job, image, favorite,updateProducts }) {
+function Attendant({ id, username, salary, job, image, favorite,updateAttendants }) {
  
 
-  function addToCart() {
-    fetch(`https://damp-journey-46873.herokuapp.com/products/${id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "Application/json",
-        Accept: "Application/json",
-      },
-      body: JSON.stringify({ favourite: !favorite }),
-    })
+  function addToDeleted() {
+    fetch(`http://localhost:9292/attendants/${id}`, {
+      method: "DELETE"    })
       .then((response) => response.json())
-      .then((data) => updateProducts(data))
+      .then((data) => updateAttendants(id))
 
       .catch((error) => console.log(error));
   }
@@ -27,8 +21,8 @@ function Attendant({ id, username, salary, job, image, favorite,updateProducts }
         <strong>Salary Ksh {salary}</strong>
       </p>
 
-      <button onClick={addToCart}>
-        {favorite ? "Remove from Cart" : "Add to Cart"}
+      <button onClick={addToDeleted}>
+        DELETE
       </button>
     </div>
   );
