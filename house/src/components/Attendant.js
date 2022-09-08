@@ -1,6 +1,6 @@
 import React from "react";
 
-function Product({ id, name, price, image, favorite,updateProducts }) {
+function Attendant({ id, name, price, image, favorite,updateProducts }) {
  
 
   function addToCart() {
@@ -33,4 +33,4 @@ function Product({ id, name, price, image, favorite,updateProducts }) {
   );
 }
 
-export default Product;
+export default Attendant;

@@ -1,41 +1,41 @@
-import Product from "./Attendant";
+// import attendant from "./Attendant";
 import { useState } from "react";
+import Attendant from "./Attendant";
 
-function ProductsContainer({ products, setProducts }) {
+function AttendantsHolder({ attendants, setAttendants }) {
   const [selectedOption, setSelectedOption] = useState("All");
 
   function handleSelect(e) {
     setSelectedOption(e.target.value);
   }
 
-  function updateProducts(data) {
-    const updatedProducts = products.map((product) => {
-      if (product.id === data.id) {
+  function updateAttendants(data) {
+    const updatedAttendants = attendants.map((attendant) => {
+      if (attendant.id === data.id) {
         return data;
       }
-      return product;
+      return attendant;
     });
-    setProducts(updatedProducts);
+    setAttendants(updatedAttendants);
   }
 
-  const filteredProducts = products.filter((product) => {
+  const filteredAttendants = attendants.filter((attendant) => {
     if (selectedOption === "All") {
-      return product;
+      return attendant;
     }
-    return product.favourite === true && selectedOption === "favourite";
+    
   });
 
-  const showProducts = filteredProducts.map((product) => {
+  const showAttendants = filteredAttendants.map((attendant) => {
     return (
-      <Product
-        favorite={product.favourite}
-        key={product.id}
-        id={product.id}
-        name={product.name}
-        content={product.content}
-        price={product.price}
-        image={product.image}
-        updateProducts={updateProducts}
+      <Attendant
+        key={attendant.id}
+        id={attendant.id}
+        name={attendant.username}
+        content={attendant.job}
+        price={attendant.salary}
+        image={attendant.image}
+        updateAttendants={updateAttendants}
       />
     );
   });
@@ -43,13 +43,12 @@ function ProductsContainer({ products, setProducts }) {
   return (
     <div className="products-container">
       <select className="select-bar" onChange={handleSelect} value={selectedOption}>
-        <option value="All">All Products</option>
-        <option value="favourite">My Cart</option>
+        <option value="All">Attendants</option>
       </select>
 
-      {showProducts}
+      {showAttendants}
     </div>
   );
 }
 
-export default ProductsContainer;
+export default AttendantsHolder;

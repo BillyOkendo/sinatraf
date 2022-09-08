@@ -1,7 +1,7 @@
 
 import AttendantsHolder  from "./AttendantsHolder";
 
-function Catalogue({attendants,setAttendants}) {
+function Working({attendants,setAttendants}) {
   return (
     <div className="cata">
       <AttendantsHolder attendants={attendants} setAttendants={setAttendants} />
@@ -9,4 +9,4 @@ function Catalogue({attendants,setAttendants}) {
   );
 }
 
-export default Catalogue;
+export default Working;
