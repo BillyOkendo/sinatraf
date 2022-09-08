@@ -28,7 +28,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home  />} />
          <Route path="/working" element={<Working updateAttendants={updateAttendants} setAttendants={setAttendants} attendants={attendants}/>} />
-         {/* <Route path="/reviews" element={<Reviews setProducts={setProducts} products={products} />} /> */}
+         <Route path="/new" element={<AddingAttendant setAttendants={setAttendants} attendants={attendants} />} />
       </Routes>
       
      
