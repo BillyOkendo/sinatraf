@@ -14,7 +14,7 @@ Billy Okendo
 
 ## Demo setup Instructions
 Open your browser,
-Click on this [Link](https://steady-griffin-2ed77a.netlify.app/) to acces the website
+Click on this [Link](https://friendly-lily-eff594.netlify.app/) to acces the website
 
 ## Installations
 fork the repository
