@@ -4,7 +4,7 @@ function Attendant({ id, username, salary, job, image, handleDelete }) {
  
 
   function addToDeleted() {
-    fetch(`http://localhost:9292/attendants/${id}`, {
+    fetch(`https://enigmatic-coast-49713.herokuapp.com/attendants/${id}`, {
       method: "DELETE"    })
       .then((response) => response.json())
       .then((data) => handleDelete(id))

@@ -15,7 +15,7 @@ function App() {
 
     
   useEffect(() => {
-    fetch("http://localhost:9292/attendants")
+    fetch("https://enigmatic-coast-49713.herokuapp.com/attendants")
       .then((response) => response.json())
       .then((attendants) => setAttendants(attendants));
   }, []);

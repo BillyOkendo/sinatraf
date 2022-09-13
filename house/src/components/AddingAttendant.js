@@ -17,7 +17,7 @@ function AddingAttendant({ updateAttendants }) {
     ) {
       alert("Please input all fields");
     } else {
-      fetch("http://localhost:9292/attendants", {
+      fetch("https://enigmatic-coast-49713.herokuapp.com/attendants", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
